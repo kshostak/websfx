@@ -1,0 +1,5 @@
+Put it into your script directory and launch from any web browser.
+Then have install.php - it is the self-extract PHP archive.
+You can put in on a HTTP server with PHP and launch from a browser.
+Tested on D.E.N.W.E.R and some Unix hostings with PHP 5.2+.
+Required Zlib PHP extension.
