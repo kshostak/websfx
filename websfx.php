@@ -33,9 +33,6 @@ foreach($files as $filename){
 	}
 }
 $str .= 'function _s($f,$s){_cd(dirname($f));if(file_put_contents($f,gzuncompress(base64_decode($s)))!==false) echo"<font color=green>".$f." - uncompress OK</font>"; else echo"<font color=red>".$f." - uncompress FAILED</font>"; echo"<br>";} function _cd(&$d){if(dirname($d)!=".")_cd(dirname($d));if(!empty($d)&&$d!="."&&!file_exists($d))mkdir($d,0777);} echo round(memory_get_usage()/1024/1024,2);';
-file_put_contents(
-	'installer.php',
-	$str
-);
+file_put_contents('installer.php',$str);
 
 echo '<p>'.$a.' files packed</p>';
